@@ -1,0 +1,149 @@
+/* Kartu umum */
+.card {
+  background: #fff;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  height: 300px;
+  width: 300px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: #007bff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card h2 {
+  font-family: "Poppins", sans-serif;
+  color: #e6a100;
+  margin-bottom: 10px;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+/* Tombol modern */
+.button {
+  appearance: none;
+  background: linear-gradient(135deg, #405cf5, #2b49e0);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(64, 92, 245, 0.3);
+  color: #fff;
+  cursor: pointer;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 44px;
+  margin-top: 12px;
+  padding: 0 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #2b49e0, #233bc5);
+  box-shadow: 0 4px 14px rgba(64, 92, 245, 0.4);
+  transform: translateY(-2px);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Wadah Flexbox */
+.flexbox-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Notifikasi info */
+.alert-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #a0e3fd;
+  border-left: 4px solid #52a6d0;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.alert-info button {
+  font-size: 12px;
+  background: #52a6d0;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.alert-info button:hover {
+  background: #3c8eb8;
+}
+
+/* Kartu Profil */
+.profile-card {
+  width: 260px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.1);
+  text-align: center;
+  border-radius: 16px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  transform: scale(1.05);
+}
+
+.profile-card .avatar {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 10px;
+}
+
+.profile-card .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  object-fit: cover;
+}
+
+.profile-card .avatar .badge {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: #28a745;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.profile-card h3 {
+  margin: 10px 0 5px;
+  color: #333;
+}

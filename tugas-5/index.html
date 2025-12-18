@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3: Basic Flexbox</title>
+    <!-- pico css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- div = inline vertikal -->
+    <!-- paragraf = block -->
+    <!-- img = inline-block -->
+    
+    <!-- beri space di kiri-kanan halaman -->
+    <div class="container">
+      <h1>Tugas 5 : UI Components</h1>
+      <hr>
+      <h2>Bagian 1: Pricing Box</h2>
+      <!-- flexbox area -->
+      <div class="flexbox-area">
+        <!-- flexbox item (yng sdh di dalam)-->
+        <div class="card">
+          <h3>basic</h3>
+          <h2>500K</h2>
+          <p>fitur dasar</p>
+          <p>prioritas terakhir</p>
+          <button role="button" class="button">Select</button>
+        </div>
+        <div class="card">
+          <h3>pro</h3>
+          <h2>1Jt</h2>
+          <p>fitur lengkap</p>
+          <p>akses prioritas</p>
+          <button role="button" class="button">Select</button>
+        </div>
+        <div class="card">
+          <h3>enterprise</h3>
+          <h2>2,5JT</h2>
+          <p>akses tak terbatas</p>
+          <p>kuota terbatas</p>
+          <button role="button" class="button">Select</button>
+        </div>
+      </div>
+      <!-- akhir flexbox area -->
+      <br>
+      <hr>
+      <br>
+      <!-- alert box -->
+      <h2>Bagian 2: Alert Box</h2>
+      <h2>Alert Info</h2>
+      <div class="flexbox-area alert-info">
+        <p>“Watch out, there’s someone who likes to eavesdrop! Haha.”😆</p>
+        <button type="button" onclick="this.parentElement.style.display='none'">❌</button>
+      </div>
+      <br>
+      <hr>
+      <br>
+      <!-- profile card -->
+      <h2>Bagian 3: Profile Card</h2>
+       <div class="profile-card">
+         <div class="avatar">
+           <img src="images/grimlock.png"alt="User Photo" />
+           <span class="badge">Active</span>
+          </div>
+          <h3>Grimlock</h3>
+          <p><h3>Transformer</h3></p>
+       </div>
+    </div>
+    <!-- akhir container -->
+  </body>
+</html>
